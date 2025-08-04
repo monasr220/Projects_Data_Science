@@ -1,17 +1,42 @@
-# Projects_Data_Science
+# 🧠 My Journey in Data Science
 
+Welcome to my public repository where I document my learning path and projects in Data Science, Machine Learning, and AI.
 
-This repository contains a collection of data science projects I've worked on while learning and practicing different concepts.
+## 📂 Projects
 
-Each project focuses on various topics such as:
-- Data analysis and visualization
-- Working with real-world datasets (CSV files)
-- Machine learning models
-- Python libraries like Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+### 1. Credit Card Fraud Detection - Logistic Regression
+A machine learning project using logistic regression to detect fraudulent credit card transactions.
 
-All notebooks are clearly commented to make them easy to understand and follow.
+- **Dataset**: Credit Card Transactions Dataset (CSV)
+- **Goal**: Classify whether a transaction is fraudulent or not.
+- **Tech stack**:
+  - Python
+  - Pandas & NumPy
+  - Matplotlib & Seaborn
+  - scikit-learn
 
-## Purpose
-To document my progress, learn by doing, and share useful work publicly.
+#### 🔍 Project Highlights:
+- Data Cleaning and Exploration (EDA)
+- Feature scaling and preprocessing
+- Train/test split
+- Model training using Logistic Regression
+- Accuracy, confusion matrix, and evaluation metrics
+- Model tuning with `max_iter`
 
-More projects will be added over time.
+📁 Notebook: [`Credit_Card.ipynb`](./Credit_Card.ipynb)
+
+---
+
+## 🧩 Upcoming Projects
+I plan to add more projects here soon including:
+- Exploratory Data Analysis (EDA)
+- Data Visualization Dashboards
+- Clustering and Classification Models
+- Deep Learning Projects
+
+---
+
+## 🚀 About Me
+I'm a computer science student passionate about AI, machine learning, and solving real-world problems through data.
+
+Follow my progress and feel free to contribute or give feedback!  
