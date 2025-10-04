@@ -2,24 +2,24 @@ import argparse
 import cv2
 import pandas as pd
 
-# Argparse
+
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True, help="Image Path")
 args = vars(ap.parse_args())
 img_path = args['image']
 
-# Read Image
+
 img = cv2.imread(img_path)
 
-# Load CSV
+
 index = ["color", "color_name", "hex", "R", "G", "B"]
 csv = pd.read_csv('colors.csv', names=index, header=None)
 
-# Globals
+
 clicked = False
 r = g = b = xpos = ypos = 0
 
-# Mouse Callback
+
 def draw_function(event, x, y, flags, param):
     global b, g, r, xpos, ypos, clicked
     if event == cv2.EVENT_LBUTTONDBLCLK:
@@ -34,7 +34,7 @@ def draw_function(event, x, y, flags, param):
 cv2.namedWindow('image')
 cv2.setMouseCallback('image', draw_function)
 
-# Function to get color name
+
 def getColorName(R, G, B):
     minimum = 10000
     cname = "Unknown"
@@ -45,7 +45,7 @@ def getColorName(R, G, B):
             cname = csv.loc[i, "color_name"]
     return cname
 
-# Loop
+
 while True:
     cv2.imshow("image", img)
     if clicked:
@@ -64,8 +64,8 @@ while True:
 
         clicked = False
 
-    # Exit with ESC
     if cv2.waitKey(20) & 0xFF == 27:
         break
 
 cv2.destroyAllWindows()
+
